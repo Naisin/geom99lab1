@@ -26,7 +26,7 @@
 
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: -34.397, lng: 150.644 },
+          center: { lat: 37.5519, lng: 126.9918 },
           zoom: 8,
         });
       }
@@ -37,7 +37,7 @@
     
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
     <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
-    <script src= "https://www.google.com/maps/1o2olaYDCT25DKCbCfKBz-lBwx_ODimM&ehbc=2E312F/embed?mid=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&ehbc=2E312F" async>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
     </script>
   </body>
 </html>
