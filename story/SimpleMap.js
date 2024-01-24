@@ -18,7 +18,7 @@ function initMap() {
   
     directionsService
       .route({
-        origin: { lat: 22.5851, lng: 88.3469 },
+        origin: { lat: 28.7041, lng: 77.1025 },
         destination: { lat: 28.6129, lng: 77.2295 },
         // Note that Javascript allows us to access the constant
         // using square brackets and a string value as its
