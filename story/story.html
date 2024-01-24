@@ -1,19 +1,22 @@
 <html>
   <head>
-    <title>The Pilgrimage Journey: Top To Tip</title>
+    <title>Waypoints in Directions</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script type="module" src="./story.js"></script>
+    <script type="module" src="./index.js"></script>
   </head>
   <body>
     <div id="container">
       <div id="map"></div>
       <div id="sidebar">
         <div>
-          <b>Begin:</b>
+          <b>Start:</b>
           <select id="start">
-            <option value="Jammu, J&K, India">Jammu, Jammu & Kashmir</option>
+            <option value="Halifax, NS">Halifax, NS</option>
+            <option value="Boston, MA">Boston, MA</option>
+            <option value="New York, NY">New York, NY</option>
+            <option value="Miami, FL">Miami, FL</option>
           </select>
           <br />
           <b>Waypoints:</b> <br />
@@ -50,7 +53,7 @@
       for more information.
       -->
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
       defer
     ></script>
   </body>
