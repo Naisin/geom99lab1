@@ -4,8 +4,8 @@ function initMap(): void {
   const map = new google.maps.Map(
     document.getElementById("map") as HTMLElement,
     {
-      zoom: 6,
-      center: { lat: 22.5851, lng: 88.3469 },
+      zoom: 14,
+      center: { lat: 37.77, lng: -122.447 },
     }
   );
 
@@ -29,8 +29,8 @@ function calculateAndDisplayRoute(
 
   directionsService
     .route({
-      origin: { lat: 22.5851, lng: 88.3469 }, // Haight.
-      destination: { lat: 28.6129, lng: 77.2295 }, // Ocean Beach.
+      origin: { lat: 37.77, lng: -122.447 }, // Haight.
+      destination: { lat: 37.768, lng: -122.511 }, // Ocean Beach.
       // Note that Javascript allows us to access the constant
       // using square brackets and a string value as its
       // "property."
