@@ -15,7 +15,7 @@ async function initMap() {
   const markerViewWithText = new AdvancedMarkerElement({
     map,
     position: { lat: 33.0308, lng: 74.9490 },
-    title: "Vaishno Devi - The Holy Caves. Best Time: Throughout the year.",
+    title: "Vaishno Devi - The Holy Caves.",
   });
   
   const pinScaled = new PinElement({
@@ -35,7 +35,7 @@ async function initMap() {
     map,
     position: { lat: 29.9457, lng: 78.1642 },
     content: pinBackground.element,
-    title: "Haridwar - Ganges' wave of religion and spirituality. Best Time: Throughout the year. "
+    title: "Haridwar - Ganges' wave of religion and spirituality."
   });
  
   const pinBorder = new PinElement({
