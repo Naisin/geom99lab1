@@ -7,7 +7,7 @@ async function initMap() {
     "marker",
   );
   const map = new Map(document.getElementById("map"), {
-    center: { lat: 32.7266, lng: 74.8570 },
+    center: { lat: 28.7041, lng: 77.1025 },
     zoom: 6,
     mapId: "4504f8b37365c3d0",
   });
