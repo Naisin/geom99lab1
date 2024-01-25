@@ -4,6 +4,43 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <style>
+      /* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100%;
+  display: flex;
+}
+
+#sidebar {
+  flex-basis: 15rem;
+  flex-grow: 1;
+  padding: 20px;
+  max-width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+#map {
+  flex-basis: 0;
+  flex-grow: 4;
+  height: 100%;
+}
+
+#Titletext {
+  font-weight: bold;
+  font-size: 30px;
+  border-style:solid;
+  font-family: 'Courier New', Courier, monospace;
+}
+    </style>
     <script type="module" src="./story.js"></script>
   </head>
   <body>
