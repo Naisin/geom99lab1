@@ -1,7 +1,7 @@
 const parser = new DOMParser();
 
 async function initMap() {
-  // Request needed libraries.
+ 
   const { Map, Polyline } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
     "marker",
@@ -11,14 +11,13 @@ async function initMap() {
     zoom: 6,
     mapId: "4504f8b37365c3d0",
   });
-  // Each PinElement is paired with a MarkerView to demonstrate setting each parameter.
-  // Default marker with title text (no PinElement).
+ 
   const markerViewWithText = new AdvancedMarkerElement({
     map,
     position: { lat: 33.0308, lng: 74.9490 },
     title: "Vaishno Devi - The Holy Caves. Best Time: Throughout the year.",
   });
-  // Adjust the scale.
+  
   const pinScaled = new PinElement({
 
   });
@@ -28,7 +27,7 @@ async function initMap() {
     content: pinScaled.element,
     title: "Amarnath Cave - A haven for pilgrims."
   });
-  // Change the background color.
+ 
   const pinBackground = new PinElement({
   
   });
@@ -38,7 +37,7 @@ async function initMap() {
     content: pinBackground.element,
     title: "Haridwar - Ganges' wave of religion and spirituality. Best Time: Throughout the year. "
   });
-  // Change the border color.
+ 
   const pinBorder = new PinElement({
   
   });
@@ -48,7 +47,7 @@ async function initMap() {
     content: pinBorder.element,
     title: "Gangotri Glacier - Source of River Ganges."
   });
-  // Change the glyph color.
+  
   const pinGlyph = new PinElement({
     
   });
@@ -58,7 +57,7 @@ async function initMap() {
     content: pinGlyph.element,
     title: "Varanasi - The Spiritual Capital."
   });
-  // Hide the glyph.
+  
   const pinNoGlyph = new PinElement({  
   });
   const markerViewNoGlyph = new AdvancedMarkerElement({
@@ -77,7 +76,7 @@ async function initMap() {
     { lat: 24.6959, lng: 84.9914 },
   ];
 
-  // Create a polyline and set its path
+ 
   const flightPath = new Polyline({
     path: polylineCoordinates,
     geodesic: true,
