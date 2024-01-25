@@ -1,11 +1,11 @@
+<!-- HTML document for "The Northern Pilgrimage Trip" -->
+
 <html>
   <head>
-    <title>The Northern Pilgrimage Trip</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <style>
-      /* Optional: Makes the sample page fill the window. */
+    <title>The Northern Pilgrimage Trip</title> <!-- Setting title -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> <!-- Including a polyfill for JavaScript features which help enabling the modern language features and APIs in old browsers -->
+    <style><!-- Using Internal CSS for layout design-->
+    
 html,
 body {
   height: 100%;
@@ -41,17 +41,17 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
     </style>
-    <script type="module" src="./story.js"></script>
+    <script type="module" src="./story.js"></script> <!-- Including Javascript module -->
   </head>
   <body>
-    <div id="container">
+    <div id="box"><!-- main container holding the map and the side bar on the right-->
       <div id="map"></div>
-      <div id="sidebar">
+      <div id="bar">
         <div>
-          <p id = "TitleText">
+          <p id = "TitleText"><!-- title of the trip showed on the map-->
             THE NORTHERN PILGRIMAGE TRIP
           </p>
-          <h3>Vaishno Devi - The Holy Caves.</h3>
+          <h3>Vaishno Devi - The Holy Caves.</h3><!-- details about Vaishno Devi-->
           <br>
           <img src = "./Images/Vaishno-Devi.jpg" alt = "Vaishno Devi Temple">
           <p class = "SimpleText">Located in Trikuta hills, 13 km from Katra at the height of 1560 m above sea level with bright clouds and thinning air, this town is the holy cave temple of Mata Vaishnodevi, with spirituality and vibrancy lingering in the atmosphere.</p>
@@ -59,7 +59,7 @@ body {
           <b>Best Time To Visit:</b> Throughout the year</p>
           <br>
 
-          <h3>Amarnath Cave - A haven for pilgrims.</h3>
+          <h3>Amarnath Cave - A haven for pilgrims.</h3><!-- details about Amarnath Cave-->
           <br>
           <img src = "./Images/Amarnath-Cave.jpg" alt = "Amarnath Cave">
           <p class = "SimpleText">Amarnath is one of the most important pilgrimage in India for the worshippers of Lord Shiva. The Amarnath cave is haven to an enshrined image of ice called the Shivaling formed naturally, which resembles Lord Shiva.</p>
@@ -67,7 +67,7 @@ body {
           <b>Best Time To Visit:</b> May to September</p>
           <br>
 
-          <h3>Haridwar - Ganges' wave of religion and spirituality.</h3>
+          <h3>Haridwar - Ganges' wave of religion and spirituality.</h3><!-- details about Haridwar-->
           <br>
           <img src = "./Images/H_aridwar.jpg" alt = "Haridwar">
           <p class = "SimpleText">No spiritual journey can ever be considered complete without a visit to Haridwar, one of the holiest pilgrimage sites for Hindus. Literally meaning 'the abode of Lord Vishnu', Haridwar, located in the Garhwal region of Uttarakhand, is a land of legends and myths. Considered as one of the seven holiest cities in India, Haridwar sees millions of people flock to it every year to pay their respects to the Lord, or to wash away their sins. However, with the passage of time, Haridwar has evolved from being a mere religious city to a multifaceted cultural and spiritual centre, and only after exploring Haridwar will you realize that there is a lot more to the city than just visiting temples and taking a dip in the holy Har ki Pauri. Haridwar has a perennial mystical air around i, and is the perfect holiday option for anyone seeking spiritual connection as well as a chance to indulge in and get closer to nature.</p>
@@ -75,7 +75,7 @@ body {
           <b>Best Time To Visit:</b> Throughout the year</p>
           <br>
 
-          <h3>Gangotri Glacier - Source of River Ganges.</h3>
+          <h3>Gangotri Glacier - Source of River Ganges.</h3><!-- details about Gangotri Dham-->
           <br>
           <img src = "./Images/gangotri-glacier.jpg" alt = "Gangotri Glacier">
           <p class = "SimpleText">This pilgrimage destination situated in Uttarkashi is mostly famous for the four religious centers, or as they say, the Char Dham spots.</p>
@@ -83,7 +83,7 @@ body {
           <b>Best Time To Visit:</b> April to June, September to November</p>
           <br>
 
-          <h3>Varanasi - The Spiritual Capital.</h3>
+          <h3>Varanasi - The Spiritual Capital.</h3><!-- details about Varanasi-->
           <br>
           <img src = "./Images/Varanasi.jpg" alt = "Varanasi">
           <p class = "SimpleText">A city as old as time itself. A city that has stayed in place and watched as the world has turned and the tides have changed. A city that has stood the test of time for thousands of years. In the words of Mark Twain, "Older than history, older than tradition, older even than legend, And looks twice as old as all of them put together." Varanasi, the city that is more than just the spiritual capital of India. The city which can be aptly described as a melting pot where both life and death come together. The city that you only need to visit once for it to stay with you forever.</p>
@@ -91,7 +91,7 @@ body {
           <b>Best Time To Visit:</b> October to March</p>
           <br>
 
-          <h3>Bodh Gaya - Mahabodhi Tree & the land of Nirvana.</h3>
+          <h3>Bodh Gaya - Mahabodhi Tree & the land of Nirvana.</h3><!-- details about Bodh Gaya-->
           <br>
           <img src = "./Images/Bodh-Gaya.png" alt = "Bodh Gaya">
           <p class = "SimpleText">One of the most important pilgrimage sites for Buddhists, Bodhgaya is a village in the state of Bihar. It was here under the Bodhi tree that Gautama Buddha attained enlightenment. The place is bustling with pilgrims all through the year who come to pay their homage in the monasteries, shrines and temples. It also attracts tourists from India and abroad owing to its magnificent Buddha statue, the Mahabodhi Temple and the Bodhi tree.</p>
@@ -99,7 +99,7 @@ body {
           <b>Best Time To Visit:</b> October to March</p>
         </div>
 
-    <!-- prettier-ignore -->
+    <!-- Google Maps Javascript API -->
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE", v: "weekly"});</script>
   </body>
