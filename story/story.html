@@ -1,11 +1,9 @@
 <html>
   <head>
-    <title>The Northern Pilgrimage Trip</title>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
- 
-    <link rel="stylesheet" type="text/css" href="./style.css" />
-    <style>
-      /* Optional: Makes the sample page fill the window. */
+    <title>The Northern Pilgrimage Trip</title><!--Title Story-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script><!--Used to provide better browser comaptibility-->
+
+    <style><!--Internal CSS for layout-->
 html,
 body {
   height: 100%;
@@ -41,14 +39,14 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
     </style>
-    <script type="module" src="./story.js"></script>
+    <script type="module" src="./story.js"></script><!--Using Javascript module script-->
   </head>
   <body>
-    <div id="container">
-      <div id="map"></div>
-      <div id="sidebar">
+    <div id="container"><!--Main Container-->
+      <div id="map"></div><!--Map Container-->
+      <div id="sidebar"><!--Sidebar Container-->
         <div>
-          <p id = "TitleText">
+          <p id = "TitleText"><!--The Title Story of the Map-->
             THE NORTHERN PILGRIMAGE, IND
           </p>
           <h3>Vaishno Devi - The Holy Caves.</h3>
@@ -99,7 +97,7 @@ body {
           <b>Best Time To Visit:</b> October to March</p>
         </div>
  
-    <!-- prettier-ignore -->
+    <!--GMaps Javascript API-->
     <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
         ({key: "AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE", v: "weekly"});</script>
   </body>
