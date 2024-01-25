@@ -5,6 +5,7 @@ const parser = new DOMParser();
 async function initMap() {
  
  //requesting libraries from Google Maps.
+ //sourced from https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-basic-style.
   const { Map, Polyline } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
     "marker",
@@ -72,6 +73,7 @@ async function initMap() {
   });
 
  //assigning coordinates for the polyline.
+//sourced from https://developers.google.com/maps/documentation/javascript/examples/polyline-simple.
   const polylineCoordinates = [
     { lat: 33.0308, lng: 74.9490 },
     { lat: 34.2157, lng: 75.5041 },
