@@ -83,7 +83,7 @@ async function initMap() {
     geodesic: true,
     strokeColor: "red",
     strokeOpacity: 1.0,
-    strokeWeight: 1,
+    strokeWeight: 1.5,
   });
 
   flightPath.setMap(map);
