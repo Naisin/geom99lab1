@@ -89,4 +89,3 @@ async function initMap() {
 }
 
 initMap();
-
